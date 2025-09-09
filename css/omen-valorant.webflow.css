@@ -355,6 +355,32 @@ a {
   line-height: 102%;
 }
 
+.centeredh2 {
+  color: var(--_omenfonts---white);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 57px;
+  font-size: 180%;
+  font-weight: 400;
+  line-height: 101%;
+}
+
+.media_centerh1-copy {
+  color: var(--_omenfonts---white);
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 300%;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.heading-2, .mediacenteredgotham {
+  color: var(--_omenfonts---white);
+  font-weight: 400;
+}
+
 @media screen and (max-width: 991px) {
   .grid-unleash {
     grid-template-columns: 1fr;
