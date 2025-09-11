@@ -145,7 +145,7 @@ a {
   background-color: var(--_omenfonts---dark);
   width: 100%;
   height: auto;
-  min-height: 70svh;
+  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -174,6 +174,11 @@ a {
 .omenheroside {
   cursor: pointer;
   object-fit: none;
+  background-image: url('../images/heroback.png');
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-attachment: fixed;
   flex-flow: column;
   justify-content: center;
   align-items: flex-end;
@@ -184,9 +189,8 @@ a {
   padding-left: 5%;
   padding-right: 5%;
   display: flex;
-  position: relative;
-  top: 0;
-  left: 0;
+  position: absolute;
+  inset: auto 0% 0% auto;
 }
 
 .omenheroside:hover {
@@ -246,6 +250,12 @@ a {
   position: absolute;
   inset: 0% auto auto 0%;
   overflow: auto;
+}
+
+.main {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .lockintext {
@@ -464,7 +474,18 @@ a {
   display: flex;
 }
 
+.wrapper {
+  background-color: var(--_omenfonts---black);
+}
+
 @media screen and (max-width: 991px) {
+  .omen-herowrap {
+    background-image: url('../images/heroback.png');
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+
   .image {
     object-fit: fill;
     min-height: auto;
@@ -479,6 +500,7 @@ a {
   .omenheroside {
     aspect-ratio: auto;
     object-fit: contain;
+    background-position: 0 0;
     justify-content: flex-end;
     align-items: flex-end;
     height: auto;
@@ -526,10 +548,12 @@ a {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    height: 800px;
-    min-height: auto;
+    height: auto;
+    min-height: 700px;
+    margin-bottom: 157px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 0;
     display: block;
   }
 
@@ -556,6 +580,7 @@ a {
     align-items: center;
     width: 100%;
     margin-top: -300px;
+    margin-bottom: 98px;
   }
 
   .omenherotextwrap {
@@ -611,7 +636,8 @@ a {
   .omenheroside {
     justify-content: flex-start;
     align-items: center;
-    margin-top: 0;
+    margin-top: -32px;
+    margin-bottom: 10px;
   }
 
   .omenherotextwrap {
