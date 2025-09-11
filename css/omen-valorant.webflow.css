@@ -174,7 +174,7 @@ a {
 .omenheroside {
   cursor: pointer;
   object-fit: none;
-  background-image: url('../images/heroback.png');
+  background-image: url('https://yslhp.github.io/omenvalorant/images/heroback.png');
   background-position: 0 0;
   background-repeat: repeat-x;
   background-size: contain;
