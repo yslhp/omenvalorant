@@ -261,6 +261,7 @@ a {
 }
 
 .unleash-section2-wrap {
+  border-top: 1px solid var(--_omenfonts---omenred);
   background-color: var(--_omenfonts---dark);
   margin-left: auto;
   margin-right: auto;
@@ -687,9 +688,14 @@ a {
   }
 }
 
-#w-node-_8cc28f1e-1b4d-8683-1732-56d174bd4aff-2bc9d08e, #w-node-_38fb76c7-574a-a129-967d-1e23a740dcf5-2bc9d08e {
+#w-node-_8cc28f1e-1b4d-8683-1732-56d174bd4aff-2bc9d08e {
   grid-area: span 1 / span 1 / span 1 / span 1;
   justify-self: start;
+}
+
+#w-node-_38fb76c7-574a-a129-967d-1e23a740dcf5-2bc9d08e {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  place-self: center start;
 }
 
 #w-node-cd0b49b2-f63e-60c4-7249-89553dea333b-2bc9d08e, #w-node-_7b6587b1-1538-82c5-2fdb-84cae278a978-2bc9d08e {
