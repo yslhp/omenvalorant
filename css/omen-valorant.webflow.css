@@ -551,6 +551,10 @@ a {
   min-height: 40px;
 }
 
+.link-block-4 {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 991px) {
   .image {
     object-fit: fill;
@@ -689,12 +693,13 @@ a {
   .omenheroside {
     object-fit: none;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     max-width: none;
     min-height: 550px;
-    margin-top: 0;
+    margin-top: -253px;
     margin-bottom: 0;
+    padding-right: 2%;
   }
 
   .omenherotextwrap {
@@ -748,9 +753,10 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     max-width: none;
-    margin-top: 0;
-    margin-left: auto;
+    margin-top: 10px;
+    margin-left: 0;
     margin-right: auto;
+    padding-right: 2%;
     bottom: 0%;
   }
 
@@ -792,7 +798,7 @@ a {
   .omenheroside {
     justify-content: flex-start;
     align-items: center;
-    margin-top: -150px;
+    margin-top: -244px;
     margin-bottom: 10px;
   }
 
@@ -816,7 +822,7 @@ a {
 
   .omenheroh2 {
     text-align: center;
-    margin-bottom: 44px;
+    margin-bottom: 0;
     font-size: 140%;
   }
 
@@ -894,12 +900,17 @@ a {
     align-items: center;
   }
 
+  .rowline {
+    overflow: hidden;
+  }
+
   .herotopmax {
     flex: none;
     justify-content: center;
     align-items: center;
     min-height: 350px;
     margin-top: 0;
+    padding-right: 0%;
   }
 
   .headline2 {
