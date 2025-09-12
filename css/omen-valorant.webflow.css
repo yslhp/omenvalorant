@@ -236,6 +236,7 @@ a {
 
 .omentitletextblock {
   max-width: none;
+  position: relative;
 }
 
 .heroimagewrapper {
@@ -423,13 +424,15 @@ a {
 }
 
 .herotopmax {
+  flex-flow: column;
   align-self: flex-end;
   width: 100%;
   max-width: 60rem;
-  margin-top: 100px;
+  margin-top: 0;
   margin-left: 0;
   margin-right: 20px;
   padding-left: 0%;
+  display: flex;
   position: relative;
 }
 
@@ -472,7 +475,7 @@ a {
 
 .headsmallcode {
   color: var(--_omenfonts---white);
-  margin-top: 10px;
+  margin-top: 0;
   margin-bottom: 0;
   font-family: GothamLight, Arial, sans-serif;
   font-size: 140%;
@@ -523,6 +526,11 @@ a {
 
 .imagelogo {
   object-fit: contain;
+}
+
+.gridfollow {
+  grid-template-rows: auto;
+  grid-template-columns: .25fr 1fr;
 }
 
 @media screen and (max-width: 991px) {
@@ -607,12 +615,24 @@ a {
     bottom: 20%;
   }
 
+  .grid-3 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
   .partnersubtext {
     max-width: 25rem;
   }
 
   .valorantgrid {
     grid-template-columns: 1fr;
+  }
+
+  .gridfollow {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
   }
 }
 
@@ -665,6 +685,11 @@ a {
     margin-right: auto;
   }
 
+  .paragraph-gotham.wide.left {
+    margin-top: 0;
+    position: relative;
+  }
+
   .gothamheadline {
     font-size: 350%;
   }
@@ -715,6 +740,13 @@ a {
 
   .link-block-2 {
     width: auto;
+  }
+
+  .followwrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 300px;
+    display: flex;
   }
 }
 
@@ -836,6 +868,8 @@ a {
 
   .herotopmax {
     flex: none;
+    justify-content: flex-start;
+    align-items: center;
     margin-top: 0;
   }
 
@@ -856,6 +890,10 @@ a {
   .logosgrid {
     grid-template-columns: 1fr;
   }
+
+  .gridfollow {
+    height: 500px;
+  }
 }
 
 #w-node-_8cc28f1e-1b4d-8683-1732-56d174bd4aff-2bc9d08e, #w-node-a354c8a8-defd-4c59-83b0-e7333de8ec39-2bc9d08e {
@@ -863,12 +901,20 @@ a {
   justify-self: start;
 }
 
-#w-node-cd0b49b2-f63e-60c4-7249-89553dea333b-2bc9d08e, #w-node-_7b6587b1-1538-82c5-2fdb-84cae278a978-2bc9d08e, #w-node-_7a6f21f1-5479-0df1-b796-0a32990f2886-2bc9d08e, #w-node-ec6acb40-6252-f115-3e78-95800ab16093-2bc9d08e, #w-node-cd0b49b2-f63e-60c4-7249-89553dea333b-f4227ac8, #w-node-_7a6f21f1-5479-0df1-b796-0a32990f2886-f4227ac8, #w-node-ec6acb40-6252-f115-3e78-95800ab16093-f4227ac8 {
+#w-node-cd0b49b2-f63e-60c4-7249-89553dea333b-2bc9d08e, #w-node-_7b6587b1-1538-82c5-2fdb-84cae278a978-2bc9d08e {
+  place-self: center;
+}
+
+#w-node-_73e53f44-13d6-338c-f0d6-0aedd7840ad1-2bc9d08e {
+  align-self: start;
+}
+
+#w-node-_7a6f21f1-5479-0df1-b796-0a32990f2886-2bc9d08e, #w-node-ec6acb40-6252-f115-3e78-95800ab16093-2bc9d08e, #w-node-cd0b49b2-f63e-60c4-7249-89553dea333b-f4227ac8, #w-node-_7a6f21f1-5479-0df1-b796-0a32990f2886-f4227ac8, #w-node-ec6acb40-6252-f115-3e78-95800ab16093-f4227ac8 {
   place-self: center;
 }
 
 @media screen and (max-width: 479px) {
-  #w-node-_8cc28f1e-1b4d-8683-1732-56d174bd4aff-2bc9d08e, #w-node-a354c8a8-defd-4c59-83b0-e7333de8ec39-2bc9d08e {
+  #w-node-_8cc28f1e-1b4d-8683-1732-56d174bd4aff-2bc9d08e, #w-node-a354c8a8-defd-4c59-83b0-e7333de8ec39-2bc9d08e, #w-node-_73e53f44-13d6-338c-f0d6-0aedd7840ad1-2bc9d08e {
     place-self: center;
   }
 }
