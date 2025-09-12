@@ -729,9 +729,10 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     max-width: none;
-    margin-top: -200px;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    bottom: 0%;
   }
 
   .valorantgrid {
@@ -743,8 +744,9 @@ a {
   }
 
   .followwrapper {
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     height: 300px;
     display: flex;
   }
@@ -870,6 +872,7 @@ a {
     flex: none;
     justify-content: flex-start;
     align-items: center;
+    min-height: 350px;
     margin-top: 0;
   }
 
@@ -911,6 +914,12 @@ a {
 
 #w-node-_7a6f21f1-5479-0df1-b796-0a32990f2886-2bc9d08e, #w-node-ec6acb40-6252-f115-3e78-95800ab16093-2bc9d08e, #w-node-cd0b49b2-f63e-60c4-7249-89553dea333b-f4227ac8, #w-node-_7a6f21f1-5479-0df1-b796-0a32990f2886-f4227ac8, #w-node-ec6acb40-6252-f115-3e78-95800ab16093-f4227ac8 {
   place-self: center;
+}
+
+@media screen and (max-width: 767px) {
+  #w-node-_73e53f44-13d6-338c-f0d6-0aedd7840ad1-2bc9d08e {
+    place-self: center start;
+  }
 }
 
 @media screen and (max-width: 479px) {
