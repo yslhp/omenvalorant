@@ -263,7 +263,7 @@ a {
 .lockintext {
   font-family: var(--_omenfonts---gotham);
   color: var(--_omenfonts---white);
-  margin-top: 21%;
+  margin-top: 25%;
   margin-left: auto;
   margin-right: auto;
   font-size: 110%;
@@ -273,7 +273,7 @@ a {
 }
 
 .lockintext:hover {
-  color: var(--_omenfonts---black);
+  color: var(--_omenfonts---omenred);
 }
 
 .omen-valorant {
@@ -356,6 +356,7 @@ a {
   object-fit: cover;
   width: 100%;
   min-width: 100%;
+  height: 100%;
   min-height: auto;
   max-height: none;
   margin-left: auto;
@@ -402,6 +403,8 @@ a {
 
 .logovalorant {
   border-right: 0px none var(--_omenfonts---dark);
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -420,7 +423,16 @@ a {
 
 .rowline {
   border-right: 1px solid var(--_omenfonts---white);
+  background-image: url('../images/1pixel.svg');
+  background-position: 50%;
+  background-repeat: repeat-y;
+  background-size: auto;
+  justify-content: center;
+  align-items: center;
+  width: 1px;
+  height: 40px;
   margin-right: 20px;
+  display: flex;
 }
 
 .herotopmax {
@@ -531,6 +543,12 @@ a {
 .gridfollow {
   grid-template-rows: auto;
   grid-template-columns: .25fr 1fr;
+}
+
+.whitepixel {
+  width: 1px;
+  height: 40px;
+  min-height: 40px;
 }
 
 @media screen and (max-width: 991px) {
@@ -722,7 +740,8 @@ a {
   .imagetrio {
     aspect-ratio: auto;
     height: auto;
-    max-height: none;
+    min-height: 60svw;
+    max-height: 60svw;
   }
 
   .herotopmax {
@@ -813,6 +832,13 @@ a {
     min-height: 200px;
   }
 
+  .lockinblock {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+  }
+
   .lockintext {
     justify-content: center;
     align-items: center;
@@ -849,8 +875,8 @@ a {
   .imagetrio {
     aspect-ratio: auto;
     min-width: 100%;
-    min-height: auto;
-    max-height: 15rem;
+    min-height: 59svw;
+    max-height: 59svw;
   }
 
   .grid-2 {
@@ -870,7 +896,7 @@ a {
 
   .herotopmax {
     flex: none;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     min-height: 350px;
     margin-top: 0;
@@ -897,11 +923,24 @@ a {
   .gridfollow {
     height: 500px;
   }
+
+  .link-block-3 {
+    width: 100%;
+  }
 }
 
-#w-node-_8cc28f1e-1b4d-8683-1732-56d174bd4aff-2bc9d08e, #w-node-a354c8a8-defd-4c59-83b0-e7333de8ec39-2bc9d08e {
+#w-node-_8cc28f1e-1b4d-8683-1732-56d174bd4aff-2bc9d08e {
   grid-area: span 1 / span 1 / span 1 / span 1;
   justify-self: start;
+}
+
+#w-node-_31bbc2b8-556d-744b-b61c-1d6319b4d970-2bc9d08e {
+  place-self: center;
+}
+
+#w-node-a354c8a8-defd-4c59-83b0-e7333de8ec39-2bc9d08e {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  place-self: center end;
 }
 
 #w-node-cd0b49b2-f63e-60c4-7249-89553dea333b-2bc9d08e, #w-node-_7b6587b1-1538-82c5-2fdb-84cae278a978-2bc9d08e {
@@ -912,7 +951,7 @@ a {
   align-self: start;
 }
 
-#w-node-_7a6f21f1-5479-0df1-b796-0a32990f2886-2bc9d08e, #w-node-ec6acb40-6252-f115-3e78-95800ab16093-2bc9d08e, #w-node-cd0b49b2-f63e-60c4-7249-89553dea333b-f4227ac8, #w-node-_7a6f21f1-5479-0df1-b796-0a32990f2886-f4227ac8, #w-node-ec6acb40-6252-f115-3e78-95800ab16093-f4227ac8 {
+#w-node-ec6acb40-6252-f115-3e78-95800ab16093-2bc9d08e, #w-node-cd0b49b2-f63e-60c4-7249-89553dea333b-f4227ac8, #w-node-_7a6f21f1-5479-0df1-b796-0a32990f2886-f4227ac8, #w-node-ec6acb40-6252-f115-3e78-95800ab16093-f4227ac8 {
   place-self: center;
 }
 
