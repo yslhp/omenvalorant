@@ -555,6 +555,23 @@ a {
   cursor: pointer;
 }
 
+.code-embed {
+  width: 100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-3 {
+  overflow: hidden;
+}
+
+.streamblock {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+}
+
 @media screen and (max-width: 991px) {
   .image {
     object-fit: fill;
@@ -901,6 +918,7 @@ a {
   }
 
   .rowline {
+    height: 0;
     overflow: hidden;
   }
 
