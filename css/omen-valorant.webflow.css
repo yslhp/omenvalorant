@@ -174,7 +174,7 @@ a {
 .omenheroside {
   cursor: pointer;
   object-fit: none;
-  background-image: url('https://yslhp.github.io/omenvalorant/images/heroback.png');
+  background-image: url('../images/heroback.png');
   background-position: 0 0;
   background-repeat: repeat-x;
   background-size: contain;
@@ -374,7 +374,9 @@ a {
 
 .mediacenteredgotham {
   color: var(--_omenfonts---white);
+  font-size: 300%;
   font-weight: 400;
+  line-height: 101%;
 }
 
 .valorantlogos {
@@ -478,6 +480,16 @@ a {
   background-color: var(--_omenfonts---black);
 }
 
+.omenlogowrap {
+  object-fit: contain;
+}
+
+.valorantgrid {
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
 @media screen and (max-width: 991px) {
   .omen-herowrap {
     background-image: url('../images/heroback.png');
@@ -530,16 +542,30 @@ a {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    min-width: auto;
     margin-bottom: 48px;
     display: flex;
+  }
+
+  .mediawrapper {
+    width: 100%;
   }
 
   .grid {
     grid-template-columns: 1fr;
   }
 
+  .imagetrio {
+    aspect-ratio: 2 / 3;
+    max-height: 25rem;
+  }
+
   .partnersubtext {
     max-width: 25rem;
+  }
+
+  .valorantgrid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -645,6 +671,10 @@ a {
   }
 
   .paragraph-gotham {
+    text-align: center;
+  }
+
+  .paragraph-gotham.wide.left {
     text-align: left;
   }
 
@@ -698,6 +728,11 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 15%;
+  }
+
+  .imagetrio {
+    min-height: auto;
+    max-height: 15rem;
   }
 
   .grid-2 {
