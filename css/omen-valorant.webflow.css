@@ -143,6 +143,11 @@ a {
 
 .omen-herowrap {
   background-color: var(--_omenfonts---dark);
+  background-image: url('../images/heroback.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
   width: 100%;
   height: auto;
   min-height: 600px;
@@ -174,11 +179,6 @@ a {
 .omenheroside {
   cursor: pointer;
   object-fit: none;
-  background-image: url('../images/heroback.png');
-  background-position: 0 0;
-  background-repeat: repeat-x;
-  background-size: contain;
-  background-attachment: fixed;
   flex-flow: column;
   justify-content: center;
   align-items: flex-end;
@@ -495,13 +495,6 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-  .omen-herowrap {
-    background-image: url('../images/heroback.png');
-    background-position: 0 0;
-    background-repeat: repeat-x;
-    background-size: contain;
-  }
-
   .image {
     object-fit: fill;
     min-height: auto;
